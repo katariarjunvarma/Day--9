@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main() {
+    int num = 100;  // Declare an integer variable
+    int *ptr = &num;  // Pointer to the integer variable
+    int **ptrToPtr = &ptr;  // Pointer to the pointer
+
+    // Print the value of the integer using the variable, the pointer, and the pointer to the pointer
+    std::cout << "Value of num using the variable: " << num << std::endl;
+    std::cout << "Value of num using the pointer: " << *ptr << std::endl;
+    std::cout << "Value of num using the pointer to pointer: " << **ptrToPtr << std::endl;
+
+    return 0;
+}
